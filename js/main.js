@@ -33,7 +33,6 @@ bt1.addEventListener('click', function arrayProductos() {
   }else{
     alert('¡Ya existe este producto!')
   }
-  
   console.log(productos)
 
  
