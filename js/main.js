@@ -1,12 +1,27 @@
-let producto = document.getElementById("pro")
-let unidad = document.getElementById("uni")
-let valor = document.getElementById("val")
-let array = [producto,unidad,valor]
+let productos = [];
+let bt1 = document.getElementById("btn1");
 
-let bt1 = document.getElementById("btn1")
+bt1.addEventListener('click', function arrayProductos() {
+  let producto = {
+    Produc: document.getElementById('pro').value,
+    unidad: Number.parseInt(document.getElementById('uni').value),
+    valor: Number.parseFloat(document.getElementById('val').value),
+  };
+  console.log(producto, 'productos');
 
-bt1.addEventListener('click', function(){
-    let dup = array.push ([producto.value,unidad.value,valor.value])
-    alert(dup)
-    
-})
+  let Existe = false
+  productos.forEach(element => {
+    if(producto.Produc === element.Produc){
+        Existe=true
+    }
+  });
+  if(!Existe) {
+    productos.push(producto)
+    alert('Producto almacenado')
+  }else{
+    alert('¡Ya existe este producto!')
+  }
+  
+  console.log(productos)
+
+});
