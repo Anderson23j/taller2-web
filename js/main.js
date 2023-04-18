@@ -45,6 +45,6 @@ productos.forEach(element => {
 });
 
 let result= document.getElementById('resultado')
-result.innerText= "TOTAL A PAGAR: "+totalaPagar
+result.innerHTML= `<h3>TOTAL A PAGAR ES:  ${totalaPagar}</h3> `
 });
 

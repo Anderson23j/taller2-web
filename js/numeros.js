@@ -52,7 +52,7 @@ console.log(numeros)
 function mostrarResultados(){
     var resultado = document.getElementById('resultado')
     resultado.innerHTML = `
-    <h1>El número mayor es: ${numeroMayor}</h1>
-    <h1>El número menor es: ${numeroMenor}</h1>
+    <h2>El número mayor es: ${numeroMayor}</h2>
+    <h2>El número menor es: ${numeroMenor}</h2>
     `
 }
