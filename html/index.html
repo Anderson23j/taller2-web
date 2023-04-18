@@ -21,9 +21,14 @@
 
     <h1 class="text-center mb-3 mt-3 t-light" >PRIMER PUNTO</h1>
     <div class="container">
-        <input class="form-control mb-3" type="text" placeholder="Producto" id="pro">
+        <div class="input-group mb-3"">
+            <span class="input-group-text">Producto</span>
+            <input type="tex" class="form-control" aria-label="Amount
+                        (to the nearest dollar)" id="pro">
+        </div>
+        
         <div class="input-group mb-3">
-            <span class="input-group-text">C</span>
+            <span class="input-group-text">Cantidad</span>
             <input type="number" class="form-control" aria-label="Amount
                         (to the nearest dollar)" id="uni">
 
@@ -31,10 +36,10 @@
         <!-- <input type="number" placeholder="Unidades" id="uni"> -->
         <!-- <input type="number" placeholder="Valor" id="val"> -->
         <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
+            <span class="input-group-text">Precio $</span>
             <input type="number" class="form-control" aria-label="Amount
                         (to the nearest dollar)" id="val">
-            <span class="input-group-text">.00</span>
+           
         </div>
 
         <button type="submit" id="btn1" class=" btn btn-outline-primary
